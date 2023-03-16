@@ -66,7 +66,7 @@ const displayQuiz = (data) => {
     <div class="h-8 w-8 bg-green-300 rounded-full flex justify-center items-center text-green-800 mr-3">
       ${i + 1}
     </div>
-    <p class="text-gray-800 text-sm">${quiz.quetion}</p>
+    <p class="text-gray-800 text-sm">${quiz.question}</p>
   </div>
   <div class="grid grid-cols-2 gap-4 mt-5">
     ${displayQuizOptions(quiz.options, i)}
@@ -110,7 +110,7 @@ document.querySelector("#submit").addEventListener("click", () => {
   }
 
   // data setting on local storage and getting data from local storage
-  let storage = JSON.parse(localStorage.getItem("result"));
+  let storage = JSON.parse(localStorage.getItem("results"));
   if (storage) {
     localStorage.setItem(
       "results",
@@ -135,6 +135,7 @@ document.querySelector("#submit").addEventListener("click", () => {
       ])
     );
   }
+  
 
   // Right side bar/ answer section
   let x = setTimeout(() => {
