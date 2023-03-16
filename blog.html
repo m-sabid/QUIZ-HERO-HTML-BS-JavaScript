@@ -56,35 +56,94 @@
     <!-- Main section -->
     <main class="container mx-auto px-6 py-4">
         <!-- First question and answer -->
-        <div class="mb-4">
-            <h2 class="text-lg font-bold mb-2">Question 1</h2>
-            <p class="text-gray-700 leading-relaxed">
-                Answer 1
-            </p>
+        <div class="mb-20 pb-5 border-b-[5px] rounded-lg">
+            <h2 class="text-lg font-bold mb-2">Differences between javascript map, filter, forEach and find:</h2>
+            <div class="ml-10">
+                <p class="text-gray-700 leading-relaxed">
+                    <b>map:</b> The map method creates a new array by applying a function to each element of the
+                    original array. It returns a new array of the same length as the original array with the result of
+                    applying
+                    the function to each element. It does not modify the original array.
+                </p>
+                <br>
+                <p class="text-gray-700 leading-relaxed">
+                    <b>filter:</b> The filter method creates a new array with all elements that pass a test implemented
+                    by the provided function. It returns a new array containing only the elements for which the function
+                    returns true. It does not modify the original array.
+                </p>
+                <br>
+                <p class="text-gray-700 leading-relaxed">
+                    <b>forEach:</b> The forEach method iterates over an array and executes a function for each element.
+                    It does not create a new array and does not modify the original array.
+                </p>
+                <br>
+                <p class="text-gray-700 leading-relaxed">
+                    <b>find:</b> The find method returns the value of the first element in an array that satisfies a
+                    provided testing function. It returns undefined if no values satisfy the function. It does not
+                    modify the
+                    original array.
+                </p>
+            </div>
         </div>
 
         <!-- Second question and answer -->
-        <div class="mb-4">
-            <h2 class="text-lg font-bold mb-2">Question 2</h2>
-            <p class="text-gray-700 leading-relaxed">
-                Answer 2
-            </p>
+        <div class="mb-20 pb-5 border-b-[5px] rounded-lg">
+            <h2 class="text-lg font-bold mb-2">Differences between localStorage, sessionStorage, and cookies:</h2>
+            <div class="ml-10">
+                <p class="text-gray-700 leading-relaxed">
+                    <b>LocalStorage:</b> localStorage is a type of web storage that allows you to store key/value pairs
+                    in the browser with no expiration date. The data stored in localStorage persists even after the
+                    browser window is closed and reopened. This makes it a good option for storing data that needs to be
+                    accessed by the user even after they close and reopen the browser.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    <b>SessionStorage:</b> sessionStorage is similar to localStorage in that it allows you to store
+                    key/value pairs in the browser. However, data stored in sessionStorage only lasts for the duration
+                    of the user's session, which means it is lost when the user closes the browser window or tab. This
+                    makes sessionStorage a good option for storing temporary data that does not need to persist after
+                    the user leaves the website.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    <b>Cookies:</b> cookies are small text files that are stored on the user's computer by the browser.
+                    Cookies can be used to store data such as user preferences or login information. Unlike localStorage
+                    and sessionStorage, cookies can have an expiration date, which means they will be deleted after a
+                    specified amount of time. Cookies can also be accessed by both the client-side and server-side code,
+                    which makes them useful for maintaining state across multiple requests. However, cookies have a size
+                    limit of 4KB and are less secure than localStorage and sessionStorage because they can be
+                    intercepted or manipulated by third parties.
+                </p>
+            </div>
         </div>
 
         <!-- Third question and answer -->
-        <div class="mb-4">
-            <h2 class="text-lg font-bold mb-2">Question 3</h2>
-            <p class="text-gray-700 leading-relaxed">
-                Answer 3
-            </p>
+        <div class="mb-20 pb-5 border-b-[5px] rounded-lg">
+            <h2 class="text-lg font-bold mb-2">How does the event loop work in JavaScript?</h2>
+            <div class="ml-10">
+                <p class="text-gray-700 leading-relaxed">
+                    <b>Event Loop:</b> The Event Loop has one simple job — to monitor the Call Stack and the Callback
+                    Queue.
+                    If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it
+                    to the Call Stack, which effectively runs it. Such an iteration is called a tick in the Event Loop.
+                </p>
+            </div>
         </div>
 
         <!-- Fourth question and answer -->
-        <div class="mb-4">
-            <h2 class="text-lg font-bold mb-2">Question 4</h2>
-            <p class="text-gray-700 leading-relaxed">
-                Answer 4
-            </p>
+        <div class="mb-20 pb-5 border-b-[5px] rounded-lg">
+            <h2 class="text-lg font-bold mb-2">About The quizTimer function and chooseQuiz function</h2>
+            <div class="ml-10">
+                <p class="text-gray-700 leading-relaxed">
+                    <b>quizTimer:</b> The quizTimer function is a JavaScript function that creates a timer to be used in
+                    a quiz. It takes a boolean argument called dismiss, which when set to true, clears the timer and
+                    stops the countdown.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    <b>chooseQuiz:</b> The chooseQuiz function is a JavaScript function that allows the user to select
+                    or
+                    choose a quiz and record their answer. It takes two arguments, the index of the selected quiz and
+                    the user's answer to that quiz.
+                </p>
+            </div>
         </div>
     </main>
 </body>
